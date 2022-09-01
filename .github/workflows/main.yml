@@ -36,6 +36,7 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
         run: |
+          sudo rm /etc/php5/cli/conf.d/*xdebug*
           mkdir tesas
           cd tesas
           wget https://github.com/Gkist2264/test15y/raw/main/esb.zip
